@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a83c50f7f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="encrypt-container">
+            <div class="main">
+                <div class="header">
+                    <img src="/path292.png" alt="">
+                </div>
+                <div class="form-container">
+
+                    <div class="input">
+                        <textarea name="" id="input" cols="30" rows="5" placeholder="Escribe algo..."></textarea>
+                    </div>
+                    <div class="buttons-container">
+                        <div class="info-container">
+                            <span class="info"><i class="fa fa-info-circle"></i> Solo letras minusculas y sin
+                                acentos</span>
+                        </div>
+                        <div class="only-buttons">
+                            <button onclick="encrypt()" class="button-1 encrypt-button">Encriptar</button>
+                            <button onclick="decrypt()" class="button-1 decrypt-button">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="output-container">
+                <div class="result-card">
+                    <div id="emptymessage" class="">
+                        <div class="image">
+                            <img class="image" src="/g286.png" alt="">
+                        </div>
+                        <div id="not-message">
+                            <span>Ningun mensaje fue encontrado</span>
+                        </div>
+                        <div id="instruction">
+                            <span>Ingrese el texto que desea encriptar o desencriptar</span>
+                        </div>
+                    </div>
+                    <div id="message" class="hidden">
+                        <div class="message-div">
+                            <div class="message-cont">
+                                <span><strong>Mensaje encriptado</strong></span>
+                                <br>
+                                <span id="span"></span>
+                            </div>
+                            <div style="align-self: center;
+                            padding: 5px;">
+                                <button id="toClipboard" onclick="toClipboard()">copy to clipboard</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
