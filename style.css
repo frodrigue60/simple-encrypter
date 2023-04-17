@@ -4,6 +4,37 @@
 
 body {
     background-color: #d6e3ee;
+    margin: 0px;
+}
+nav{
+    height: 40px;
+    margin-bottom: 1rem;
+    background-color: #718596;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+footer{
+    height: 40px;
+    margin-top: 1rem;
+    background-color: #718596;
+    display: flex;
+    align-items: center;
+    place-content: center;
+    gap: 10px;
+}
+.icon-net{
+    height: 32px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav>div>span{
+    color: #d6e3ee;
+    font-size: 20px;
 }
 
 .hidden {
